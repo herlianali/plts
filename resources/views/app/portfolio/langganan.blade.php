@@ -72,7 +72,7 @@
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <div class="shadow p-3 mb-5 bg-body rounded" id="printPage">
+                    <div class="shadow p-3 mb-5 bg-body rounded responsive-font-example" id="printPage">
                         <div class="d-flex justify-content-between">
                             <div class="d-flex align-self-end pt-4">
                                 <p>
@@ -112,7 +112,7 @@
                             </tbody>
                         </table>
                         <p>Kami merekomendasikan pemasangan PLTS dengan system tersebut dengan detail sebagai berikut :</p>
-                        <table class="table table-hover table-lg table-bordered">
+                        <table class="table table-hover table-lg table-bordered table-responsive">
                             <tr>
                                 <td>Kapasitas PLTS (Wp)</td>
                                 <td class="text-end"><b id="kapasitas"></b></td>
@@ -139,54 +139,56 @@
                             </tr>
 
                         </table>
-                        <table class="table table-hover table-lg table-bordered">
-                            <thead class="table-light">
-                                <tr>
-                                    <td><b>Bill of Material</b></td>
-                                    <td><b>Qty</b></td>
-                                    <td><b>Satuan</b></td>
-                                    <td><b>Brand & Type</b></td>
-                                    <td><b>Negara Pembuatnya</b></td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Solar Panel (PV Module), WP</td>
-                                    <td id="qty"></td>
-                                    <td>Unit</td>
-                                    <td>Nusa FullBlack - Nusa1H440MB44</td>
-                                    <td>Indonesia</td>
-                                </tr>
-                                <tr>
-                                    <td>Inverter On Grid, Watt</td>
-                                    <td>1</td>
-                                    <td>Unit</td>
-                                    <td>Growatt / Huawei</td>
-                                    <td>China</td>
-                                </tr>
-                                <tr>
-                                    <td>PV Bracket untuk Atap</td>
-                                    <td>1</td>
-                                    <td>Set</td>
-                                    <td>Aluminium</td>
-                                    <td>Indonesia</td>
-                                </tr>
-                                <tr>
-                                    <td>Panel Load Transfer</td>
-                                    <td>1</td>
-                                    <td>Set</td>
-                                    <td>Schneider/ABB</td>
-                                    <td>Indonesia</td>
-                                </tr>
-                                <tr>
-                                    <td>Kabel dan Aksesoris</td>
-                                    <td>1</td>
-                                    <td>Set</td>
-                                    <td>Sutrado/KMI/Supreme</td>
-                                    <td>Indonesia</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="table-responsive">
+                            <table class="table table-hover table-xl table-bordered">
+                                <thead class="table-light">
+                                    <tr>
+                                        <td><b>Bill of Material</b></td>
+                                        <td><b>Qty</b></td>
+                                        <td><b>Satuan</b></td>
+                                        <td><b>Brand & Type</b></td>
+                                        <td><b>Negara Pembuatnya</b></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Solar Panel (PV Module), WP</td>
+                                        <td id="qty"></td>
+                                        <td>Unit</td>
+                                        <td>Nusa FullBlack - Nusa1H440MB44</td>
+                                        <td>Indonesia</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Inverter On Grid, Watt</td>
+                                        <td>1</td>
+                                        <td>Unit</td>
+                                        <td>Growatt / Huawei</td>
+                                        <td>China</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PV Bracket untuk Atap</td>
+                                        <td>1</td>
+                                        <td>Set</td>
+                                        <td>Aluminium</td>
+                                        <td>Indonesia</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Panel Load Transfer</td>
+                                        <td>1</td>
+                                        <td>Set</td>
+                                        <td>Schneider/ABB</td>
+                                        <td>Indonesia</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kabel dan Aksesoris</td>
+                                        <td>1</td>
+                                        <td>Set</td>
+                                        <td>Sutrado/KMI/Supreme</td>
+                                        <td>Indonesia</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                         <p>Dengan sistem yang kami rekomendasikan ini selain penghematan biaya listrik yang dapat anda rasakan, Anda juga telah berpartisipasi nyata dalam ikut mendukung penurunan emisi CO2 di bumi.</p>
                         <p>Ya, ini adalah langkah yang tepat untuk Anda memulai Cost Saving dan Green energy dalam kehidupan Anda.</p>
                         <br>

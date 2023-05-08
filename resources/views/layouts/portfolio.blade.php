@@ -27,19 +27,20 @@
 
   <!-- Template Main CSS File -->
   <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
-  <style>
-    .btn-nav{
-        position: absolute;
-        right: 80px;
-    }
-    .btn-nav a{
-        color: rgba(255, 255, 255, 0.7);
-        margin: 5px;
-    }
-    .btn-nav a:hover{
-        color: #fff;
-    }
-  </style>
+    <style>
+        /* .btn-nav{
+            position: absolute;
+            right: 80px;
+        }
+        .btn-nav a{
+            color: rgba(255, 255, 255, 0.7);
+            margin: 5px;
+        }
+        .btn-nav a:hover{
+            color: #fff;
+        } */
+
+    </style>
 </head>
 
 <body class="page-index">
@@ -54,7 +55,7 @@
         <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
-        <nav id="navbar" class="navbar" style="right: 150px">
+        <nav id="navbar" class="navbar" >
             <ul>
                 <li><a href="{{ route('/') }}" class="active">Home</a></li>
                 <li><a href="{{ route('under_construction') }}">Keuntungan</a></li>
@@ -67,11 +68,13 @@
                         <li><a href="{{ route('under_construction') }}">Simulasi Leasing</a></li>
                     </ul>
                 </li>
+                <li>
+                    <a href="{{ route('under_construction') }}" >Login <i class="ri-user-2-fill"></i></a>
+                    {{-- <div class="btn-nav" style=""> --}}
+                    {{-- </div> --}}
+                </li>
             </ul>
         </nav>
-        <div class="btn-nav" style="">
-            <a href="{{ route('under_construction') }}" class="btn btn-info"><i class="ri-user-2-fill"></i> Login</a>
-        </div>
 
         </div>
     </header>
