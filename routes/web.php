@@ -6,6 +6,10 @@ Route::get('/', function () {
     return redirect()->route('portfolio');
 })->name('/');
 
+Route::get('under_construction', function () {
+    return view('layouts.construction');
+})->name('under_construction');
+
 Route::get('login', [App\Http\Controllers\AuthController::class, 'login'])->name('login');
 Route::post('login', [App\Http\Controllers\AuthController::class, 'login_process'])->name('login.process');
 Route::get('logout', [App\Http\Controllers\AuthController::class, 'logout'])->name('logout');

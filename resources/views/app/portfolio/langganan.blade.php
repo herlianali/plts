@@ -76,7 +76,7 @@
                         <div class="d-flex justify-content-between">
                             <div class="d-flex align-self-end pt-4">
                                 <p>
-                                    Kepada Yth : <b>Bapak Joko Widodo</b> <br>
+                                    Kepada Yth : <b id="nama_porto"></b> <br>
                                     (pelanggan yang peduli dengan kelestarian bumi Nusantara)
                                 </p>
                             </div>
@@ -312,6 +312,8 @@
                     _token: '{{ csrf_token() }}'
                 },
                 success: function(data){
+                    console.log(data);
+                    $('#nama_porto').text(data.nama);
                     $('#golongan_tarif').text(data.golongan_tarif);
                     $('#daya_proposal').text(data.daya);
                     $('#rp_per_kwh').text(data.rp_per_kwh);

@@ -48,7 +48,7 @@
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
         <a href="{{ route('/') }}" class="logo d-flex align-items-center">
-            <img src="{{ asset('stisla/img/logo.png') }}" alt="">
+            <img src="{{ asset('logo-pju.png') }}" alt="">
         </a>
 
         <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -57,20 +57,20 @@
         <nav id="navbar" class="navbar" style="right: 150px">
             <ul>
                 <li><a href="{{ route('/') }}" class="active">Home</a></li>
-                <li><a href="">Keuntungan</a></li>
-                <li><a href="">Informasi</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="contact.html">Kontak</a></li>
+                <li><a href="{{ route('under_construction') }}">Keuntungan</a></li>
+                <li><a href="{{ route('under_construction') }}">Informasi</a></li>
+                <li><a href="{{ route('under_construction') }}">FAQ</a></li>
+                <li><a href="{{ route('under_construction') }}">Kontak</a></li>
                 <li class="dropdown"><a href="#"><span>Simulasi</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
                     <ul>
-                        <li><a href="#">Simulasi Langganan</a></li>
-                        <li><a href="#">Simulasi Leasing</a></li>
+                        <li><a href="{{ route('portfolio.simulasi_langganan') }}">Simulasi Langganan</a></li>
+                        <li><a href="{{ route('under_construction') }}">Simulasi Leasing</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
         <div class="btn-nav" style="">
-            <a href="" class="btn btn-info"><i class="ri-user-2-fill"></i> Login</a>
+            <a href="{{ route('under_construction') }}" class="btn btn-info"><i class="ri-user-2-fill"></i> Login</a>
         </div>
 
         </div>
