@@ -8,7 +8,7 @@
         <div class="col-xl-4">
           <h2 data-aos="fade-up">PLTS Petrogas Jatim Utama</h2>
           <blockquote data-aos="fade-up" data-aos-delay="100">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis cum recusandae eum laboriosam voluptatem repudiandae odio, vel exercitationem officiis provident minima. </p>
+            <p>Berikut kami sajikan simulasi perhitungan biaya dan efisiensinya.</p>
           </blockquote>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
             <a href="{{ route('portfolio.simulasi_langganan') }}" class="btn-get-started">Simulasi Langganan</a>
