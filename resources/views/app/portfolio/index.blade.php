@@ -11,8 +11,8 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis cum recusandae eum laboriosam voluptatem repudiandae odio, vel exercitationem officiis provident minima. </p>
           </blockquote>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#about" class="btn-get-started">Simulasi Langganan</a>
-            <a href="" class="btn-get-started">Simulasi Leasing</a>
+            <a href="{{ route('portfolio.simulasi_langganan') }}" class="btn-get-started">Simulasi Langganan</a>
+            <a href="{{ route('under_construction') }}" class="btn-get-started">Simulasi Leasing</a>
           </div>
 
         </div>
