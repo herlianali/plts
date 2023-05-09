@@ -293,6 +293,27 @@
             }
         });
 
+        function formatRupiah(angka, prefix){
+			var number_string = angka.replace(/[^,\d]/g, '').toString(),
+			split   		= number_string.split(','),
+			sisa     		= split[0].length % 3,
+			rupiah     		= split[0].substr(0, sisa),
+			ribuan     		= split[0].substr(sisa).match(/\d{3}/gi);
+
+			if(ribuan){
+				separator = sisa ? '.' : '';
+				rupiah += separator + ribuan.join('.');
+			}
+
+			rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
+			return prefix == undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
+		}
+
+        // function input change curency
+        $('#tagihan').on("input", function(e) {
+            $('#tagihan').val(formatRupiah(this.value, 'Rp. '));
+        });
+
         function printData()
         {
             var style = `<link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">`;
@@ -314,19 +335,18 @@
                     _token: '{{ csrf_token() }}'
                 },
                 success: function(data){
-                    console.log(data);
-                    $('#nama_porto').text(data.nama);
-                    $('#golongan_tarif').text(data.golongan_tarif);
-                    $('#daya_proposal').text(data.daya);
-                    $('#rp_per_kwh').text(data.rp_per_kwh);
-                    $('#plts_porto').text(data.plts);
-                    $('#kapasitas').text(data.kapasitas);
-                    $('#total_invest_client').text(data.total_invest_client);
-                    $('#kapasitas_plts').text(data.kapasitas_plts);
-                    $('#penghematan').text(data.penghematan);
-                    $('#bep').text(data.bep);
-                    $('#penghematan_25_thn').text(data.penghematan_25_thn);
-                    $('#qty').text(data.qty);
+                    $('#nama_porto').empty().text(data.nama);
+                    $('#golongan_tarif').empty().text(data.golongan_tarif);
+                    $('#daya_proposal').empty().text(data.daya);
+                    $('#rp_per_kwh').empty().text(data.rp_per_kwh);
+                    $('#plts_porto').empty().text(data.plts);
+                    $('#kapasitas').empty().text(data.kapasitas);
+                    $('#total_invest_client').empty().text(data.total_invest_client);
+                    $('#kapasitas_plts').empty().text(data.kapasitas_plts);
+                    $('#penghematan').empty().text(data.penghematan);
+                    $('#bep').empty().text(data.bep);
+                    $('#penghematan_25_thn').empty().text(data.penghematan_25_thn);
+                    $('#qty').empty().text(data.qty);
                     $('#unduh').on("click", function() {
                         var divToPrint = document.getElementById("printPage");
                         var newWin = window.open('', '', 'width=800,height=600');

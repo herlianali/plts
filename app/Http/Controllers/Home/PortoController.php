@@ -3,10 +3,8 @@
 namespace App\Http\Controllers\Home;
 
 use App\Http\Controllers\Controller;
-use App\Models\Material;
 use App\Services\MaterialService;
 use Illuminate\Http\Request;
-use PDF;
 
 class PortoController extends Controller
 {
@@ -14,9 +12,6 @@ class PortoController extends Controller
     public function __construct(MaterialService $materialService)
     {
         $this->materialService = $materialService;
-        // view()->share([
-        //     'material' => $materialService->material(),
-        // ]);
     }
 
     public function index()
@@ -65,15 +60,5 @@ class PortoController extends Controller
         ];
         return $data;
     }
-
-    // // public function unduh(Request $request)
-    // public function unduh()
-    // {
-    //     // $datas = $this->langganan_proses($request);
-
-    //     // return view('app.portfolio.unduh', compact('datas'));
-    //     $pdf = PDF::loadView('app.portfolio.unduh')->setOptions(['defaultFont' => 'sans-serif']);
-    //     return $pdf->download('proposal.pdf');
-    // }
 
 }
